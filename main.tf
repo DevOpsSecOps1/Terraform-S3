@@ -5,7 +5,7 @@ provider "aws" {
 }
 
 module "s3" {
-    source = "release12743"
+    source = "https://github.com/DevOpsSecOps1/Terraform-S3.git"
     #bucket name should be unique
     bucket_name = "venkatmybucket9484128"       
 }
