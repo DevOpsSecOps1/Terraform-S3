@@ -13,6 +13,7 @@ module "s3_bucket" {
   source = "terraform-aws-modules/s3-bucket/aws"
 
   bucket = "my-s3-bucket-318"
+  bucket_name = "venkatmybucket9484128"
   acl    = "private"
 
   versioning = {
