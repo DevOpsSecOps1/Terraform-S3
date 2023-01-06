@@ -3,6 +3,7 @@
 variable "bucket_name" {
   description = "mygvenkats3bucket2794"
   type        = string
+  default     = null
 }
 
 variable "acl_value" {
