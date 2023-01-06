@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage ("checkout from GIT") {
             steps {
-               git branch: 'main', credentialsId: 'github-tocken', url:'https://github.com/DevOpsSecOps1/S3-Terraform.git'
+               git branch: 'main', credentialsId: 'github-tocken', url:'https://github.com/DevOpsSecOps1/Terraform-S3.git'
             }
         }
         stage ("terraform init") {
