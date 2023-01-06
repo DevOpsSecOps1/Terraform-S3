@@ -5,7 +5,18 @@ provider "aws" {
 }
 
 module "s3" {
-    source = "https://github.com/DevOpsSecOps1/Terraform-S3.git"
+    source = "terraform-aws-modules/s3-bucket/aws"
     #bucket name should be unique
     bucket_name = "venkatmybucket9484128"       
 }
+#module "s3_bucket" {
+#  source = "terraform-aws-modules/s3-bucket/aws"
+
+#  bucket = "my-s3-bucket"
+#  acl    = "private"
+
+ # versioning = {
+ #   enabled = true
+ # }
+
+#}
